@@ -17,15 +17,15 @@ const HeartToggle: React.FC<HeartToggleProps> = ({
   ...props
 }) => {
   return (
-    <label className={css.ht_03}>
+    <label className={css.heartToggleToggle}>
       <input
         type="checkbox"
         checked={checked}
         onChange={(e) => onChange?.(e.target.checked)}
-        className={css.ht_02}
+        className={css.heartToggleInput}
         {...props}
       />
-      <Icon name={checked ? "heart-pressed" : "heart"} className={css.ht_01} />
+      <Icon name={checked ? "heart-pressed" : "heart"} className={css.heartToggleIcon} />
     </label>
   );
 };

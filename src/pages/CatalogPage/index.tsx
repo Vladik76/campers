@@ -4,11 +4,11 @@ import CampersList from "../../components/CampersList";
 
 const CatalogPage = () => {
   return (
-    <div className={css.cp_02}>
-      <div className={css.cp_03}>
+    <div className={css.catalogPageContainer}>
+      <div className={css.catalogPageFiltersContainer}>
         <Filters />
       </div>
-      <div className={css.cp_01}>
+      <div className={css.catalogPageCamperslistcontainer}>
         <CampersList />
       </div>
     </div>

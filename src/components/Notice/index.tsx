@@ -22,9 +22,9 @@ const Notice: React.FC<NoticeProps> = ({
   className,
 }) => {
   return (
-    <div className={classNames(css.not_05, css[type], className)}>
-      <div className={css.not_03}>{ICONS[type]}</div>
-      <div className={css.not_01}>{children}</div>
+    <div className={classNames(css.noticeNotice, css[type], className)}>
+      <div className={css.noticeIcon}>{ICONS[type]}</div>
+      <div className={css.noticeContent}>{children}</div>
     </div>
   );
 };

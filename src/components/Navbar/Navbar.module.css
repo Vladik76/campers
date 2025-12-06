@@ -1,6 +1,6 @@
 @import "../../styles/variables.css";
 
-.nav_05 {
+.navbarNavbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,13 +9,13 @@
     position: relative;
 }
 
-.nav_04 {
+.navbarLogo {
     font-weight: 700;
     font-size: 1.2rem;
     color: var(--color-black);
 }
 
-.nav_03 {
+.navbarLinks {
     display: flex;
     gap: 1.5rem;
     position: absolute;
@@ -24,16 +24,16 @@
     font-weight: var(--font-weight-medium);
 }
 
-.nav_02 {
+.navbarLink {
     text-decoration: none;
     color: var(--color-gray-800);
     transition: color 0.2s ease;
 }
 
-.nav_02:hover {
+.navbarLink:hover {
     color: var(--color-black);
 }
 
-.nav_01 {
+.navbarActive {
     color: var(--color-red-500);
 }

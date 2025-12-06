@@ -3,6 +3,6 @@ import css from "./Spinner.module.css";
 interface SpinnerProps extends React.HTMLAttributes<HTMLSpanElement> {}
 
 const Spinner: React.FC<SpinnerProps> = ({ className, ...props }) => {
-  return <div {...props} className={classNames(className, css.spi_01)} />;
+  return <div {...props} className={classNames(className, css.spinnerSpinner)} />;
 };
 export default Spinner;

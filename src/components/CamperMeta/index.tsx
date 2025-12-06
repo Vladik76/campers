@@ -14,13 +14,13 @@ const CamperMeta: React.FC<CamperMetaProps> = ({
   location,
 }) => {
   return (
-    <div className={css.cm_03}>
-      <span className={css.cm_02}>
-        <Icon name="star-pressed" className={css.cm_05} />
-        {rating} <span className={css.cm_04}>({reviewsCount} Reviews)</span>
+    <div className={css.camperMetaMeta}>
+      <span className={css.camperMetaItem}>
+        <Icon name="star-pressed" className={css.camperMetaStar} />
+        {rating} <span className={css.camperMetaMuted}>({reviewsCount} Reviews)</span>
       </span>
-      <span className={css.cm_02}>
-        <Icon name="map" className={css.cm_01} />
+      <span className={css.camperMetaItem}>
+        <Icon name="map" className={css.camperMetaIcon} />
         {location}
       </span>
     </div>

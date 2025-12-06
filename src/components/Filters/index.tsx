@@ -62,9 +62,9 @@ const Filters = () => {
     useGetLocationsQuery(null);
 
   return (
-    <div className={css.fil_01}>
-      <div className={css.fil_03}>
-        <h3 className={css.fil_04}>Location</h3>
+    <div className={css.filtersContainer}>
+      <div className={css.filtersLocationBox}>
+        <h3 className={css.filtersSectionLabel}>Location</h3>
         <LocationSelect
           options={locations}
           value={location || ""}
@@ -82,8 +82,8 @@ const Filters = () => {
           }
         />
       </div>
-      <div className={css.fil_02}>
-        <h3 className={css.fil_04}>Filters</h3>
+      <div className={css.filtersFiltersBox}>
+        <h3 className={css.filtersSectionLabel}>Filters</h3>
         <FilterToggleGroup
           title="Vehicle equipment"
           items={equipmentItems}

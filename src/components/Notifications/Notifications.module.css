@@ -1,6 +1,6 @@
 @import "../../styles/variables.css";
 
-.not_02 {
+.notificationsContainer {
     position: fixed;
     top: 1rem;
     left: 50%;
@@ -11,7 +11,7 @@
     z-index: 9999;
 }
 
-.not_05 {
+.notificationsNotification {
     position: relative;
     padding: 0.75rem 2.5rem 0.75rem 1rem;
     border-radius: 0.5rem;
@@ -22,24 +22,24 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.not_06 {
+.notificationsSuccess {
     background-color: var(--color-green-600);
 }
 
-.not_04 {
+.notificationsInfo {
     background-color: var(--color-blue-600);
 }
 
-.not_07 {
+.notificationsWarning {
     background-color: var(--color-yellow-600);
     color: var(--color-black);
 }
 
-.not_03 {
+.notificationsError {
     background-color: var(--color-red-600);
 }
 
-.not_01 {
+.notificationsClose {
     position: absolute;
     right: 0.5rem;
     top: 0.5rem;
@@ -52,6 +52,6 @@
     opacity: 0.75;
 }
 
-.not_01:hover {
+.notificationsClose:hover {
     opacity: 1;
 }

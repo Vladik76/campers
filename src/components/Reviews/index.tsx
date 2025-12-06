@@ -9,12 +9,12 @@ interface ReviewProp {
 
 const Review: React.FC<ReviewProp> = ({ review }) => {
   return (
-    <div className={css.rev_06}>
-      <div className={css.rev_03}>
-        <div className={css.rev_01}>{review.reviewer_name[0]}</div>
+    <div className={css.reviewsReview}>
+      <div className={css.reviewsHeader}>
+        <div className={css.reviewsAvatar}>{review.reviewer_name[0]}</div>
         <div>
-          <p className={css.rev_05}>{review.reviewer_name}</p>
-          <div className={css.rev_07}>
+          <p className={css.reviewsName}>{review.reviewer_name}</p>
+          <div className={css.reviewsStars}>
             {Array.from({ length: 5 }, (_, i) => (
               <Icon
                 name={i < review.reviewer_rating ? "star-pressed" : "star"}
@@ -24,7 +24,7 @@ const Review: React.FC<ReviewProp> = ({ review }) => {
           </div>
         </div>
       </div>
-      <p className={css.rev_02}>{review.comment}</p>
+      <p className={css.reviewsComment}>{review.comment}</p>
     </div>
   );
 };
@@ -35,7 +35,7 @@ interface ReviewsProps {
 
 const Reviews: React.FC<ReviewsProps> = ({ reviews }) => {
   return (
-    <div className={css.rev_04}>
+    <div className={css.reviewsList}>
       {reviews.map((review, index) => (
         <Review key={index} review={review} />
       ))}

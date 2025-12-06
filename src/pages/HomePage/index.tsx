@@ -5,14 +5,14 @@ import css from "./HomePage.module.css";
 const HomePage = () => {
   const navigate = useNavigate();
   return (
-    <div className={css.hp_05}>
-      <div className={css.hp_03}>
-        <h1 className={css.hp_02}>Campers of your dreams</h1>
-        <p className={css.hp_04}>
+    <div className={css.homePageWrapper}>
+      <div className={css.homePageOverlay}>
+        <h1 className={css.homePageHeading}>Campers of your dreams</h1>
+        <p className={css.homePageText}>
           You can find everything you want in our catalog
         </p>
         <Button
-          className={css.hp_01}
+          className={css.homePageButton}
           onClick={() => {
             navigate("/catalog");
           }}

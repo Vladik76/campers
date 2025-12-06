@@ -1,24 +1,24 @@
 @import "../../styles/variables.css";
 
-.ima_05 {
+.imageWrapper {
     overflow: hidden;
     position: relative;
 }
 
-.ima_03 {
+.imageLoading {
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
-.ima_02 {
+.imageImage {
     transition: opacity 0.3s ease;
 }
 
-.ima_01 {
+.imageHidden {
     opacity: 0;
 }
 
-.ima_04 {
+.imageVisible {
     opacity: 1;
 }

@@ -20,11 +20,11 @@ const FeaturesSection = () => {
   const camper = useOutletContext<Camper>();
   const { form, length, width, height, tank, consumption } = camper;
   return (
-    <div className={css.dp_01}>
+    <div className={css.detailsPageBox}>
       <CamperFeaturesList camper={camper} />
-      <div className={css.dp_04}>
-        <h4 className={css.dp_03}>Vehicle details</h4>
-        <div className={css.dp_02}>
+      <div className={css.detailsPageSection}>
+        <h4 className={css.detailsPageHeading}>Vehicle details</h4>
+        <div className={css.detailsPageDetails}>
           <span>Form</span>
           <span>
             <Form form={form} />

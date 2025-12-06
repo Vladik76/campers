@@ -1,13 +1,13 @@
-.cp_02 {
+.catalogPageContainer {
     display: flex;
     padding: 2rem;
     gap: 2rem;
 }
 
-.cp_03 {
+.catalogPageFiltersContainer {
     max-width: 360px;
 }
 
-.cp_01 {
+.catalogPageCamperslistcontainer {
     flex: 1;
 }

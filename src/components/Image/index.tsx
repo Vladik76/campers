@@ -10,15 +10,15 @@ const Image: React.FC<ImageProps> = ({ className, ...props }) => {
   const hidden = useDeferredValue(loading);
 
   return (
-    <div className={classNames(css.ima_05)}>
+    <div className={classNames(css.imageWrapper)}>
       {loading && (
-        <LoaderOverlay className={classNames(css.ima_03, className)} />
+        <LoaderOverlay className={classNames(css.imageLoading, className)} />
       )}
       <img
         {...props}
         className={classNames(
-          css.ima_02,
-          hidden ? css.ima_01 : css.ima_04,
+          css.imageImage,
+          hidden ? css.imageHidden : css.imageVisible,
           className,
         )}
         onLoad={() => setLoading(false)}

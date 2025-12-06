@@ -22,16 +22,16 @@ const FilterToggle: React.FC<FilterToggleProps> = ({
   ...props
 }) => {
   return (
-    <label className={`${css.ft_05} ${checked ? css.ft_01 : ""}`}>
+    <label className={`${css.filterToggleToggle} ${checked ? css.filterToggleChecked : ""}`}>
       <input
         type="checkbox"
         checked={checked}
         onChange={(e) => onChange?.(e.target.checked)}
-        className={css.ft_03}
+        className={css.filterToggleInput}
         {...props}
       />
-      <Icon name={icon} className={css.ft_02} />
-      <span className={css.ft_04}>{label}</span>
+      <Icon name={icon} className={css.filterToggleIcon} />
+      <span className={css.filterToggleLabel}>{label}</span>
     </label>
   );
 };

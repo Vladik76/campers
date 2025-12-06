@@ -49,8 +49,8 @@ const LocationSelect: React.FC<LocationSelectProps> = ({
   }, [isOpen]);
 
   return (
-    <div className={css.ls_02} ref={ref}>
-      <Icon name="map" className={css.ls_03} />
+    <div className={css.locationSelectField} ref={ref}>
+      <Icon name="map" className={css.locationSelectIcon} />
       <input
         type="search"
         value={query}
@@ -71,18 +71,18 @@ const LocationSelect: React.FC<LocationSelectProps> = ({
             setIsOpen(false);
           }
         }}
-        className={css.ls_04}
+        className={css.locationSelectInput}
         {...props}
       />
       {isOpen && filtered.length > 0 && (
-        <ul className={css.ls_01}>
+        <ul className={css.locationSelectDropdown}>
           {loading ? (
-            <li className={css.ls_05}>Loading...</li>
+            <li className={css.locationSelectLoading}>Loading...</li>
           ) : (
             filtered.map((option) => (
               <li
                 key={option}
-                className={css.ls_06}
+                className={css.locationSelectOption}
                 onClick={() => handleSelect(option)}
               >
                 {option}

@@ -56,33 +56,33 @@ const DatePicker: React.FC<DatePickerProps> = ({
   };
 
   return (
-    <div className={classNames(css.dp_09, className)} ref={ref}>
+    <div className={classNames(css.datePickerWrapper, className)} ref={ref}>
       <Input
         {...props}
         readOnly
-        className={css.dp_06}
+        className={css.datePickerInput}
         value={selected ? format(selected, "PPPP") : ""}
         onFocus={() => setIsOpen(true)}
         onClick={() => setIsOpen(true)}
       />
 
       {isOpen && (
-        <div className={css.dp_01}>
-          <div className={css.dp_05}>
+        <div className={css.datePickerCalendar}>
+          <div className={css.datePickerHeader}>
             <button onClick={() => setMonth(subMonths(month, 1))}>←</button>
             <span>{format(month, "MMMM yyyy")}</span>
             <button onClick={() => setMonth(addMonths(month, 1))}>→</button>
           </div>
-          <div className={css.dp_04}>
+          <div className={css.datePickerGrid}>
             {["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"].map((d) => (
-              <div key={d} className={css.dp_03}>
+              <div key={d} className={css.datePickerDayLabel}>
                 {d}
               </div>
             ))}
             {days.map((day) => (
               <button
                 key={day.toISOString()}
-                className={`${css.dp_02} ${isSameDay(day, selected || new Date()) ? css.dp_08 : ""}`}
+                className={`${css.datePickerDay} ${isSameDay(day, selected || new Date()) ? css.datePickerSelected : ""}`}
                 disabled={isBefore(day, new Date())}
                 onClick={() => handleDateClick(day)}
               >

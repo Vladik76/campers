@@ -31,20 +31,20 @@ const CampersList = () => {
   }
   const canLoadMore = totalPages > page;
   return (
-    <div className={css.cl_01}>
+    <div className={css.campersListContainer}>
       {isLoading && campers.length < 1 ? (
         <Loading />
       ) : (
         <>
-          <ul className={css.cl_03}>
+          <ul className={css.campersListList}>
             {campers.map((camper) => (
-              <li key={camper.id} className={css.cl_02}>
+              <li key={camper.id} className={css.campersListItem}>
                 <CamperListCard camper={camper} />
               </li>
             ))}
           </ul>
           {canLoadMore && (
-            <div className={css.cl_04}>
+            <div className={css.campersListLoadMoreWrapper}>
               <Button
                 variant="outline"
                 onClick={() => setPage(page + 1)}

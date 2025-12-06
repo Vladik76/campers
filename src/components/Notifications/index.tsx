@@ -10,12 +10,12 @@ const Notifications: React.FC = () => {
   const notifications = useAppSelector((state) => state.notifications);
 
   return (
-    <div className={css.not_02}>
+    <div className={css.notificationsContainer}>
       {notifications.map(({ id, type, message }) => (
-        <div key={id} className={classNames(css.not_05, css[type])}>
+        <div key={id} className={classNames(css.notificationsNotification, css[type])}>
           <span>{message}</span>
           <button
-            className={css.not_01}
+            className={css.notificationsClose}
             onClick={() => dispatch(removeNotification(id!))}
             aria-label="Dismiss notification"
           >

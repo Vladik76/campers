@@ -1,22 +1,22 @@
 @import "../../styles/variables.css";
 
-.dp_09 {
+.datePickerWrapper {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     position: relative;
 }
 
-.dp_06 {
+.datePickerInput {
     cursor: pointer;
 }
 
-.dp_07 {
+.datePickerPlaceholder {
     color: var(--color-gray-700);
     opacity: 1;
 }
 
-.dp_01 {
+.datePickerCalendar {
     position: absolute;
     top: calc(100% + 0.75rem);
     left: 0;
@@ -32,7 +32,7 @@
     align-items: center;
 }
 
-.dp_01::before {
+.datePickerCalendar::before {
     content: "";
     position: absolute;
     top: -0.5rem;
@@ -46,7 +46,7 @@
     z-index: -1;
 }
 
-.dp_05 {
+.datePickerHeader {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -59,7 +59,7 @@
     padding: 0.5rem 0;
 }
 
-.dp_05 button {
+.datePickerHeader button {
     background: none;
     border: none;
     font-size: 1.25rem;
@@ -67,7 +67,7 @@
     color: var(--color-gray-700);
 }
 
-.dp_04 {
+.datePickerGrid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     width: 100%;
@@ -76,14 +76,14 @@
     padding-bottom: 0.5rem;
 }
 
-.dp_03 {
+.datePickerDayLabel {
     font-size: 0.75rem;
     font-weight: 500;
     color: var(--color-gray-700);
     padding: 0.25rem 0;
 }
 
-.dp_02 {
+.datePickerDay {
     border: none;
     background: none;
     cursor: pointer;
@@ -94,18 +94,18 @@
     line-height: 1;
 }
 
-.dp_02:hover {
+.datePickerDay:hover {
     background-color: var(--color-gray-100);
 }
 
-.dp_02:disabled {
+.datePickerDay:disabled {
     color: var(--color-gray-400);
     cursor: not-allowed;
     pointer-events: none;
     opacity: 0.5;
 }
 
-.dp_08 {
+.datePickerSelected {
     background-color: var(--color-gray-800);
     color: white;
 }

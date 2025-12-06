@@ -8,7 +8,7 @@ const LoaderOverlay: React.FC<LoaderOverlayProps> = ({
   className,
   ...props
 }) => {
-  return <div {...props} className={classNames(css.lo_01, className)} />;
+  return <div {...props} className={classNames(css.loaderOverlayOverlay, className)} />;
 };
 
 export default LoaderOverlay;

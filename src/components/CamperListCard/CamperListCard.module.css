@@ -1,6 +1,6 @@
 @import "../../styles/variables.css";
 
-.cl_02 {
+.camperListCardCard {
     display: flex;
     gap: 1.5rem;
     background-color: var(--color-white);
@@ -9,14 +9,14 @@
     padding: 1.5rem;
 }
 
-.cl_07 {
+.camperListCardImage {
     width: 290px;
     height: 310px;
     border-radius: 1rem;
     flex-shrink: 0;
 }
 
-.cl_03 {
+.camperListCardContent {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -24,38 +24,38 @@
     gap: 1rem;
 }
 
-.cl_05 {
+.camperListCardHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0.75rem;
 }
 
-.cl_06 {
+.camperListCardHeaderRight {
     display: flex;
     align-items: center;
 }
 
-.cl_09 {
+.camperListCardTitle {
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--color-black);
     margin: 0;
 }
 
-.cl_08 {
+.camperListCardPrice {
     font-size: 1rem;
     font-weight: 600;
     color: var(--color-black);
     margin-right: 1rem;
 }
 
-.cl_04 {
+.camperListCardDescription {
     font-size: 0.875rem;
     color: var(--color-gray-700);
     margin: 0 0 0.75rem;
 }
 
-.cl_01 {
+.camperListCardButtonContainer {
     align-self: flex-start;
 }

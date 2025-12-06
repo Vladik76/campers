@@ -1,15 +1,15 @@
-.ht_03 {
+.heartToggleToggle {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
 
-.ht_02 {
+.heartToggleInput {
     display: none;
 }
 
-.ht_01 {
+.heartToggleIcon {
     width: 1.5rem;
     height: 1.5rem;
 }

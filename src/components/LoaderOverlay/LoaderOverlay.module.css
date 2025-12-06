@@ -1,6 +1,6 @@
 @import "../../styles/variables.css";
 
-.lo_01 {
+.loaderOverlayOverlay {
     inset: 0;
     background-color: var(--color-gray-700);
     opacity: 0.5;

@@ -23,17 +23,17 @@ const CamperListCard: React.FC<CamperListCardProps> = ({ camper }) => {
   const favorites = useAppSelector(selectFavorites);
 
   return (
-    <div className={css.cl_02}>
+    <div className={css.camperListCardCard}>
       <Image
         src={gallery[0]?.thumb ?? "/camper.jpg"}
         alt={name}
-        className={css.cl_07}
+        className={css.camperListCardImage}
       />
-      <div className={css.cl_03}>
-        <div className={css.cl_05}>
-          <h3 className={css.cl_09}>{name}</h3>
-          <div className={css.cl_06}>
-            <span className={css.cl_08}>€{price.toFixed(0)}</span>
+      <div className={css.camperListCardContent}>
+        <div className={css.camperListCardHeader}>
+          <h3 className={css.camperListCardTitle}>{name}</h3>
+          <div className={css.camperListCardHeaderRight}>
+            <span className={css.camperListCardPrice}>€{price.toFixed(0)}</span>
             <HeartToggle
               checked={favorites.includes(id)}
               onChange={(v) =>
@@ -43,9 +43,9 @@ const CamperListCard: React.FC<CamperListCardProps> = ({ camper }) => {
           </div>
         </div>
         <CamperMeta {...{ rating, location }} reviewsCount={reviews.length} />
-        <p className={css.cl_04}>{description}</p>
+        <p className={css.camperListCardDescription}>{description}</p>
         <CamperFeaturesList camper={camper} />
-        <div className={css.cl_01}>
+        <div className={css.camperListCardButtonContainer}>
           <Button
             variant="primary"
             onClick={() => {

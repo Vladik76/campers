@@ -1,17 +1,17 @@
 @import "../../styles/variables.css";
 
-.cl_01 {
+.campersListContainer {
     display: flex;
     flex-direction: column;
 }
 
-.cl_05 {
+.campersListSpinner {
     width: 3rem;
     height: 3rem;
     align-self: center;
 }
 
-.cl_03 {
+.campersListList {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -20,12 +20,12 @@
     margin: 0;
 }
 
-.cl_02 {
+.campersListItem {
     border-radius: 1.5rem;
     overflow: hidden;
 }
 
-.cl_04 {
+.campersListLoadMoreWrapper {
     margin-top: 2rem;
     display: flex;
     justify-content: center;

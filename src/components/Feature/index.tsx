@@ -10,9 +10,9 @@ interface FeatureProps {
 
 const Feature: React.FC<FeatureProps> = ({ icon, label }) => {
   return (
-    <button className={css.fea_01}>
-      <Icon name={icon} className={css.fea_02} />
-      <span className={css.fea_03}>{label}</span>
+    <button className={css.featureFeature}>
+      <Icon name={icon} className={css.featureIcon} />
+      <span className={css.featureLabel}>{label}</span>
     </button>
   );
 };

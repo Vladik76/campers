@@ -1,24 +1,24 @@
 @import "../../styles/variables.css";
 
-.rev_04 {
+.reviewsList {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.rev_06 {
+.reviewsReview {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
 }
 
-.rev_03 {
+.reviewsHeader {
     display: flex;
     gap: 1rem;
     align-items: center;
 }
 
-.rev_01 {
+.reviewsAvatar {
     width: 2.5rem;
     height: 2.5rem;
     background-color: var(--color-gray-100);
@@ -31,20 +31,20 @@
     justify-content: center;
 }
 
-.rev_05 {
+.reviewsName {
     font-weight: 600;
     margin: 0;
     color: var(--color-black);
 }
 
-.rev_07 {
+.reviewsStars {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 0.2rem;
 }
 
-.rev_02 {
+.reviewsComment {
     font-size: 0.95rem;
     color: var(--color-gray-800);
     line-height: 1.5;

@@ -20,37 +20,37 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
 
   return (
     <>
-      <div className={css.gal_03}>
+      <div className={css.galleryGrid}>
         {images.map((img, i) => (
           <button
             key={img.thumb}
-            className={css.gal_10}
+            className={css.galleryThumbButton}
             onClick={() => setIndex(i)}
           >
-            <Image src={img.thumb} alt="" className={css.gal_09} />
+            <Image src={img.thumb} alt="" className={css.galleryThumb} />
           </button>
         ))}
       </div>
 
       {index !== null && (
-        <div className={css.gal_04} onClick={close}>
-          <div className={css.gal_05} />
+        <div className={css.galleryModal} onClick={close}>
+          <div className={css.galleryModalBackdrop} />
           <div
-            className={css.gal_06}
+            className={css.galleryModalContent}
             onClick={(e) => e.stopPropagation()}
           >
             <Image
               src={images[index].original}
               alt=""
-              className={css.gal_02}
+              className={css.galleryFullImage}
             />
-            <button className={css.gal_01} onClick={close}>
+            <button className={css.galleryCloseButton} onClick={close}>
               <FaTimes />
             </button>
-            <button className={css.gal_07} onClick={showPrev}>
+            <button className={css.galleryNavLeft} onClick={showPrev}>
               <FaAngleLeft />
             </button>
-            <button className={css.gal_08} onClick={showNext}>
+            <button className={css.galleryNavRight} onClick={showNext}>
               <FaAngleRight />
             </button>
           </div>

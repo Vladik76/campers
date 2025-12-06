@@ -74,9 +74,9 @@ const BookingForm: React.FC = () => {
   };
 
   return (
-    <form className={css.bf_02} onSubmit={handleSubmit}>
-      <h3 className={css.bf_05}>Book your campervan now</h3>
-      <p className={css.bf_03}>
+    <form className={css.bookingFormForm} onSubmit={handleSubmit}>
+      <h3 className={css.bookingFormTitle}>Book your campervan now</h3>
+      <p className={css.bookingFormSubtitle}>
         Stay connected! We are always ready to help you.
       </p>
 
@@ -111,11 +111,11 @@ const BookingForm: React.FC = () => {
           handleChange({ name: "comment", value: e.currentTarget.value })
         }
         placeholder="Comment"
-        className={css.bf_04}
+        className={css.bookingFormTextarea}
       />
 
       <Button
-        className={css.bf_01}
+        className={css.bookingFormButton}
         type="submit"
         disabled={isSubmiting}
         loading={isSubmiting}

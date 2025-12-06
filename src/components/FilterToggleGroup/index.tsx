@@ -31,9 +31,9 @@ const FilterToggleGroup: React.FC<FilterToggleGroupProps> = ({
   };
 
   return (
-    <div className={css.ft_01}>
-      <h3 className={css.ft_03}>{title}</h3>
-      <div className={css.ft_02}>
+    <div className={css.filterToggleGroupGroup}>
+      <h3 className={css.filterToggleGroupTitle}>{title}</h3>
+      <div className={css.filterToggleGroupList}>
         {items.map(({ icon, name, label }) => (
           <FilterToggle
             key={label}

@@ -37,7 +37,7 @@ const CamperFeaturesList: React.FC<CamperFeaturesListProps> = ({ camper }) => {
     features.push(featuresMap.automatic);
   }
   return (
-    <ul className={css.cf_01}>
+    <ul className={css.camperFeaturesListFeatures}>
       {features.map((i) => (
         <li key={i.label}>
           <Feature label={i.label} icon={i.icon} />

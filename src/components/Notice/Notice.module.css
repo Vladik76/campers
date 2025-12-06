@@ -1,6 +1,6 @@
 @import "../../styles/variables.css";
 
-.not_05 {
+.noticeNotice {
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -12,36 +12,36 @@
     background-color: var(--color-gray-50);
 }
 
-.not_03 {
+.noticeIcon {
     display: flex;
     align-items: center;
     border-right: 1px solid var(--color-gray-700);
     padding-right: 0.75rem;
 }
 
-.not_01 {
+.noticeContent {
     flex: 1;
 }
 
-.not_04 {
+.noticeInfo {
     background-color: var(--color-gray-50);
     color: var(--color-gray-800);
     border-color: var(--color-gray-200);
 }
 
-.not_06 {
+.noticeSuccess {
     background-color: #e7f6ea;
     color: #276738;
     border-color: #a4d4af;
 }
 
-.not_07 {
+.noticeWarning {
     background-color: #fff7e0;
     color: #7a5400;
     border-color: #fcd34d;
 }
 
-.not_02 {
+.noticeError {
     background-color: #ffeaea;
     color: #9f1f1f;
     border-color: #fca5a5;

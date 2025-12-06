@@ -1,12 +1,12 @@
 @import "../../styles/variables.css";
 
-.gal_03 {
+.galleryGrid {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
 }
 
-.gal_10 {
+.galleryThumbButton {
     border: none;
     background: none;
     padding: 0;
@@ -16,11 +16,11 @@
     transition: transform 0.2s ease;
 }
 
-.gal_10:hover {
+.galleryThumbButton:hover {
     transform: scale(1.03);
 }
 
-.gal_09 {
+.galleryThumb {
     width: 292px;
     height: 312px;
     border-radius: 0.75rem;
@@ -29,7 +29,7 @@
         filter 0.3s ease;
 }
 
-.gal_04 {
+.galleryModal {
     position: fixed;
     inset: 0;
     display: flex;
@@ -38,29 +38,29 @@
     z-index: 999;
 }
 
-.gal_05 {
+.galleryModalBackdrop {
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.gal_06 {
+.galleryModalContent {
     position: relative;
     z-index: 1000;
     max-width: 90vw;
     max-height: 90vh;
 }
 
-.gal_02 {
+.galleryFullImage {
     width: 100%;
     height: auto;
     max-height: 90vh;
     border-radius: 0.75rem;
 }
 
-.gal_01,
-.gal_07,
-.gal_08 {
+.galleryCloseButton,
+.galleryNavLeft,
+.galleryNavRight {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
@@ -77,30 +77,30 @@
     z-index: 1001;
 }
 
-.gal_01 {
+.galleryCloseButton {
     top: 0.5rem;
     right: 1rem;
 }
 
-.gal_01:hover {
+.galleryCloseButton:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
-.gal_07,
-.gal_08 {
+.galleryNavLeft,
+.galleryNavRight {
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.gal_07:hover,
-.gal_08:hover {
+.galleryNavLeft:hover,
+.galleryNavRight:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.gal_07 {
+.galleryNavLeft {
     left: -3rem;
 }
 
-.gal_08 {
+.galleryNavRight {
     right: -3rem;
 }

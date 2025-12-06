@@ -20,23 +20,23 @@ const Details: React.FC<DetalsProps> = ({ camper }) => {
   const images = camper.gallery || [];
   return (
     <>
-      <h1 className={css.dp_09}>{camper.name}</h1>
-      <div className={css.dp_03}>
+      <h1 className={css.detailsPageTitle}>{camper.name}</h1>
+      <div className={css.detailsPageMeta}>
         <CamperMeta
           rating={camper.rating}
           reviewsCount={camper.reviews.length}
           location={camper.location}
         />
       </div>
-      <div className={css.dp_07}>€{camper.price.toFixed(0)}</div>
+      <div className={css.detailsPagePrice}>€{camper.price.toFixed(0)}</div>
       {images.length > 0 ? (
         <Gallery images={camper.gallery || []} />
       ) : (
-        <Notice type="info" className={css.dp_04}>
+        <Notice type="info" className={css.detailsPageNotice}>
           This camper is shy and didn’t want its photo taken
         </Notice>
       )}
-      <p className={css.dp_02}>{camper.description}</p>
+      <p className={css.detailsPageDescription}>{camper.description}</p>
       <div>
         <Tabs
           tabs={[
@@ -44,8 +44,8 @@ const Details: React.FC<DetalsProps> = ({ camper }) => {
             { label: "Reviews", to: "reviews", options: { replace: true } },
           ]}
         />
-        <div className={css.dp_08}>
-          <div className={css.dp_05}>
+        <div className={css.detailsPageTab}>
+          <div className={css.detailsPageOutlet}>
             <Suspense fallback={<Loading />}>
               <Outlet context={camper} />
             </Suspense>
@@ -64,7 +64,7 @@ const DetailsPage = () => {
     return <Navigate to="/error" />;
   }
   return (
-    <div className={css.dp_01}>
+    <div className={css.detailsPageContainer}>
       {isLoading ? <Loading /> : <Details camper={camper!} />}
     </div>
   );

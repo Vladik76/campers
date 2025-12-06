@@ -21,7 +21,7 @@ const Tabs: React.FC<TabsProps> = ({ tabs }) => {
   const navigate = useNavigate();
 
   return (
-    <div className={css.tab_02}>
+    <div className={css.tabsContainer}>
       {tabs.map(({ label, to, options }) => {
         const path = useResolvedPath(to);
         const match = useMatch({ path: path.pathname, end: true });
@@ -29,7 +29,7 @@ const Tabs: React.FC<TabsProps> = ({ tabs }) => {
         return (
           <button
             key={to}
-            className={`${css.tab_03} ${isActive ? css.tab_01 : ""}`}
+            className={`${css.tabsTab} ${isActive ? css.tabsActive : ""}`}
             onClick={() => navigate(to, options)}
           >
             {label}

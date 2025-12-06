@@ -1,6 +1,6 @@
 @import "../../styles/variables.css";
 
-.ft_05 {
+.filterToggleToggle {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,24 +22,24 @@
     padding: 1rem 2rem;
 }
 
-.ft_05:hover {
+.filterToggleToggle:hover {
     background-color: var(--color-gray-50);
 }
 
-.ft_01 {
+.filterToggleChecked {
     border-color: var(--color-red-500);
 }
 
-.ft_03 {
+.filterToggleInput {
     display: none;
 }
 
-.ft_02 {
+.filterToggleIcon {
     width: 2rem !important;
     height: 2rem !important;
 }
 
-.ft_04 {
+.filterToggleLabel {
     line-height: 1rem;
     font-size: 0.875rem;
     font-weight: 500;

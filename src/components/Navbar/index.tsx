@@ -3,18 +3,18 @@ import css from "./Navbar.module.css";
 
 const Navbar = () => {
   return (
-    <nav className={css.nav_05}>
-      <div className={css.nav_04}>
+    <nav className={css.navbarNavbar}>
+      <div className={css.navbarLogo}>
         <NavLink to="/">
           <strong>Travel</strong>Trucks
         </NavLink>
       </div>
-      <div className={css.nav_03}>
+      <div className={css.navbarLinks}>
         <NavLink
           to="/"
           end
           className={({ isActive }) =>
-            isActive ? `${css.nav_02} ${css.nav_01}` : css.nav_02
+            isActive ? `${css.navbarLink} ${css.navbarActive}` : css.navbarLink
           }
         >
           Home
@@ -22,7 +22,7 @@ const Navbar = () => {
         <NavLink
           to="/catalog"
           className={({ isActive }) =>
-            isActive ? `${css.nav_02} ${css.nav_01}` : css.nav_02
+            isActive ? `${css.navbarLink} ${css.navbarActive}` : css.navbarLink
           }
         >
           Catalog

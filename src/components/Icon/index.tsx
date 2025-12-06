@@ -22,9 +22,9 @@ const Icon: React.FC<IconProps> = ({ name, className, ...props }) => {
     return icon;
   }, [name]);
   return (
-    <div className={classNames(className, css.ico_03)}>
-      <Suspense fallback={<LoaderOverlay className={css.ico_02} />}>
-        <SvgIcon {...props} className={css.ico_01} />
+    <div className={classNames(className, css.iconWrapper)}>
+      <Suspense fallback={<LoaderOverlay className={css.iconLoading} />}>
+        <SvgIcon {...props} className={css.iconIcon} />
       </Suspense>
     </div>
   );

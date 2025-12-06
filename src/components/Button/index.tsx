@@ -22,9 +22,9 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       {...props}
-      className={classNames(css.but_01, css[variant], className)}
+      className={classNames(css.buttonButton, css[variant], className)}
     >
-      {loading ? <Spinner className={css.but_04} /> : children}
+      {loading ? <Spinner className={css.buttonSpinner} /> : children}
     </button>
   );
 };

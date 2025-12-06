@@ -15,15 +15,15 @@ const Input: React.FC<InputProps> = ({
   ...props
 }) => {
   return (
-    <div className={css.inp_04}>
+    <div className={css.inputWrapper}>
       <input
         {...props}
         onChange={(e) => onChange?.(e.currentTarget.value)}
-        className={classNames(css.inp_02, className, {
-          [css.inp_01]: !!error,
+        className={classNames(css.inputInput, className, {
+          [css.inputError]: !!error,
         })}
       />
-      {error && <p className={classNames(css.inp_03, css.inp_01)}>{error}</p>}
+      {error && <p className={classNames(css.inputMessage, css.inputError)}>{error}</p>}
     </div>
   );
 };

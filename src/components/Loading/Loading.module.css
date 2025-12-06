@@ -1,6 +1,6 @@
 @import "../../styles/variables.css";
 
-.loa_04 {
+.loadingWrapper {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
@@ -9,13 +9,13 @@
     padding: 2rem 1rem;
 }
 
-.loa_02 {
+.loadingLabel {
     font-size: 1rem;
     color: var(--color-gray-800);
     font-weight: 500;
 }
 
-.loa_01 {
+.loadingBar {
     position: relative;
     width: 10rem;
     height: 0.5rem;
@@ -24,7 +24,7 @@
     overflow: hidden;
 }
 
-.loa_03 {
+.loadingProgress {
     position: absolute;
     top: 0;
     left: -50%;

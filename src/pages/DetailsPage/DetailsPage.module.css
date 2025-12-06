@@ -1,51 +1,51 @@
-.dp_01 {
+.detailsPageContainer {
     padding: 4rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.dp_09 {
+.detailsPageTitle {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--color-black);
 }
 
-.dp_03 {
+.detailsPageMeta {
     font-size: 0.9rem;
     color: var(--color-gray-700);
 }
 
-.dp_07 {
+.detailsPagePrice {
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--color-black);
 }
 
-.dp_04 {
+.detailsPageNotice {
     align-self: flex-start;
 }
 
-.dp_02 {
+.detailsPageDescription {
     font-size: 0.95rem;
     color: var(--color-gray-800);
     line-height: 1.5;
 }
 
-.dp_08 {
+.detailsPageTab {
     display: flex;
     justify-content: space-between;
     padding: 2rem 0;
 }
 
-.dp_05 {
+.detailsPageOutlet {
     max-width: 600px;
     display: flex;
     flex: 1;
     position: relative;
 }
 
-.dp_06 {
+.detailsPageOutletLoading {
     position: absolute;
     left: calc(50% - 25% / 2);
     top: calc(50% - 25% / 2);

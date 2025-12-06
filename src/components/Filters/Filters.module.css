@@ -1,25 +1,25 @@
 @import "../../styles/variables.css";
 
-.fil_01 {
+.filtersContainer {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     padding-block: 1rem;
 }
 
-.fil_03 {
+.filtersLocationBox {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
 }
 
-.fil_02 {
+.filtersFiltersBox {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-.fil_04 {
+.filtersSectionLabel {
     font-size: 0.875rem;
     font-weight: var(--font-weight-medium);
     color: var(--color-gray-800);

@@ -1,6 +1,6 @@
 @import "../../styles/variables.css";
 
-.ep_03 {
+.errorPageContainer {
     height: 100%;
     display: flex;
     align-items: center;
@@ -9,7 +9,7 @@
     background-color: var(--color-gray-50);
 }
 
-.ep_01 {
+.errorPageBox {
     max-width: 500px;
     text-align: center;
     padding: 2rem;
@@ -19,20 +19,20 @@
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
 }
 
-.ep_05 {
+.errorPageTitle {
     font-size: 2rem;
     font-weight: 700;
     color: var(--color-red-500);
     margin-bottom: 1rem;
 }
 
-.ep_04 {
+.errorPageMessage {
     font-size: 1rem;
     color: var(--color-gray-700);
     margin-bottom: 2rem;
 }
 
-.ep_02 {
+.errorPageButton {
     background-color: var(--color-red-500);
     color: var(--color-white);
     border: none;
@@ -44,6 +44,6 @@
     transition: background-color 0.2s ease;
 }
 
-.ep_02:hover {
+.errorPageButton:hover {
     background-color: var(--color-red-600);
 }

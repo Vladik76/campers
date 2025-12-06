@@ -1,6 +1,6 @@
 @import "../../styles/variables.css";
 
-.hp_05 {
+.homePageWrapper {
     position: relative;
     width: 100%;
     height: calc(100vh - 4rem);
@@ -12,7 +12,7 @@
     padding: 4rem;
 }
 
-.hp_03 {
+.homePageOverlay {
     color: var(--color-white);
     display: flex;
     flex-direction: column;
@@ -20,20 +20,20 @@
     gap: 1rem;
 }
 
-.hp_02 {
+.homePageHeading {
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 2.5rem;
     margin: 0;
 }
 
-.hp_04 {
+.homePageText {
     font-size: 1rem;
     font-weight: 400;
     margin: 0;
 }
 
-.hp_01 {
+.homePageButton {
     margin-top: 1rem;
     align-self: flex-start;
 }
