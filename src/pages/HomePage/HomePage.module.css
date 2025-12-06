@@ -1,0 +1,39 @@
+@import "../../styles/variables.css";
+
+.hp_05 {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 4rem);
+    background-image: url("/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 4rem;
+}
+
+.hp_03 {
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1rem;
+}
+
+.hp_02 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    margin: 0;
+}
+
+.hp_04 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.hp_01 {
+    margin-top: 1rem;
+    align-self: flex-start;
+}

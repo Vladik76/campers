@@ -1,0 +1,27 @@
+@import "../../styles/variables.css";
+
+.fea_01 {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--color-gray-100);
+    color: var(--color-black);
+    font-weight: var(--font-weight-medium);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-full);
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+.fea_01:hover {
+    background-color: var(--color-gray-200);
+}
+
+.fea_02 {
+    width: 1rem;
+    height: 1rem;
+}
+
+.fea_03 {
+    white-space: nowrap;
+}

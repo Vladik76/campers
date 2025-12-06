@@ -1,0 +1,47 @@
+@import "../../styles/variables.css";
+
+.but_01 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: var(--radius-full);
+    padding: 0.75rem 2rem;
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.but_03 {
+    background-color: var(--color-red-500);
+    color: white;
+}
+
+.but_03:hover {
+    background-color: var(--color-red-600);
+    color: white;
+}
+
+.but_02 {
+    background-color: transparent;
+    color: #111;
+    border: 1px solid var(--color-gray-700);
+}
+
+.but_02:hover {
+    border: 1px solid var(--color-red-600);
+}
+
+.but_01:disabled {
+    background-color: var(--color-gray-100);
+    border: 1px solid var(--color-gray-200);
+    color: var(--color-gray-500);
+    cursor: not-allowed;
+}
+
+.but_04 {
+    width: 1rem;
+    height: 1rem;
+}

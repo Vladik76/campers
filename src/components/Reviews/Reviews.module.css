@@ -1,0 +1,51 @@
+@import "../../styles/variables.css";
+
+.rev_04 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.rev_06 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.rev_03 {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.rev_01 {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--color-gray-100);
+    color: var(--color-red-500);
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rev_05 {
+    font-weight: 600;
+    margin: 0;
+    color: var(--color-black);
+}
+
+.rev_07 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.2rem;
+}
+
+.rev_02 {
+    font-size: 0.95rem;
+    color: var(--color-gray-800);
+    line-height: 1.5;
+}

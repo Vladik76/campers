@@ -1,0 +1,48 @@
+@import "../../styles/variables.css";
+
+.not_05 {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    border: 1px solid transparent;
+    background-color: var(--color-gray-50);
+}
+
+.not_03 {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid var(--color-gray-700);
+    padding-right: 0.75rem;
+}
+
+.not_01 {
+    flex: 1;
+}
+
+.not_04 {
+    background-color: var(--color-gray-50);
+    color: var(--color-gray-800);
+    border-color: var(--color-gray-200);
+}
+
+.not_06 {
+    background-color: #e7f6ea;
+    color: #276738;
+    border-color: #a4d4af;
+}
+
+.not_07 {
+    background-color: #fff7e0;
+    color: #7a5400;
+    border-color: #fcd34d;
+}
+
+.not_02 {
+    background-color: #ffeaea;
+    color: #9f1f1f;
+    border-color: #fca5a5;
+}

@@ -1,0 +1,49 @@
+@import "../../styles/variables.css";
+
+.ep_03 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: var(--color-gray-50);
+}
+
+.ep_01 {
+    max-width: 500px;
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    border: 1px solid var(--color-gray-200);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+}
+
+.ep_05 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-red-500);
+    margin-bottom: 1rem;
+}
+
+.ep_04 {
+    font-size: 1rem;
+    color: var(--color-gray-700);
+    margin-bottom: 2rem;
+}
+
+.ep_02 {
+    background-color: var(--color-red-500);
+    color: var(--color-white);
+    border: none;
+    border-radius: var(--radius-full);
+    padding: 0.75rem 2rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.ep_02:hover {
+    background-color: var(--color-red-600);
+}

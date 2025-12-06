@@ -1,0 +1,106 @@
+@import "../../styles/variables.css";
+
+.gal_03 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.gal_10 {
+    border: none;
+    background: none;
+    padding: 0;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    cursor: zoom-in;
+    transition: transform 0.2s ease;
+}
+
+.gal_10:hover {
+    transform: scale(1.03);
+}
+
+.gal_09 {
+    width: 292px;
+    height: 312px;
+    border-radius: 0.75rem;
+    transition:
+        transform 0.3s ease,
+        filter 0.3s ease;
+}
+
+.gal_04 {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.gal_05 {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.gal_06 {
+    position: relative;
+    z-index: 1000;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+.gal_02 {
+    width: 100%;
+    height: auto;
+    max-height: 90vh;
+    border-radius: 0.75rem;
+}
+
+.gal_01,
+.gal_07,
+.gal_08 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 1.3rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    z-index: 1001;
+}
+
+.gal_01 {
+    top: 0.5rem;
+    right: 1rem;
+}
+
+.gal_01:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.gal_07,
+.gal_08 {
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.gal_07:hover,
+.gal_08:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.gal_07 {
+    left: -3rem;
+}
+
+.gal_08 {
+    right: -3rem;
+}
